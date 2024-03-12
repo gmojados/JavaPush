@@ -5,25 +5,28 @@ public class Main {
         String Product = "Rice";
         int quantity = 20;
         double ricePrice = 5.0;
-        double distance = 17;
+        double distance = 10;
 
         int fee1 = 2;
         int fee2 = 5;
         int fee3 = 10;
         int fee4 = 15;
+        int fee5 = 20;
 
 
 
-        if (distance <= 4) {
-            System.out.println(fee1 +ricePrice + quantity);
+        if (distance >= 0 && distance <=4) {
+            System.out.println(fee1 + ricePrice * quantity);
 
-        }else if (distance <= 15) {
+        }else if (distance >= 5 && distance <= 15) {
             System.out.println(fee2 + ricePrice * quantity);
-        }if (distance <= 25) {
+        }else if (distance >= 16 && distance <= 25) {
             System.out.println(fee3 + ricePrice * quantity);
-        }else if (distance > 26) {
+        }else if (distance >= 26 && distance <= 50) {
             System.out.println(fee4 + ricePrice * quantity);
-        }
+        } else {
+            System.out.println(fee5 + ricePrice * quantity); } // Remember curly braces
+
 
 
 
@@ -41,4 +44,4 @@ public class Main {
 
 
     } // end method
-} // end class
+}
