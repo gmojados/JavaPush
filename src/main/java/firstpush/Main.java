@@ -19,15 +19,15 @@ public class Main {
         int fee5 = 20;
         double ProductPrice = 5.0;
         if (distance >= 0 && distance <=4) {
-            System.out.println("Your total including delivery will be " + fee1 + ProductPrice * quantity);
+            System.out.println("Your total including delivery will be " + ProductPrice * quantity +fee1);
         }else if (distance >= 5 && distance <= 15) {
-            System.out.println("Your total including delivery will be " + fee2 + ProductPrice * quantity);
+            System.out.println("Your total including delivery will be " + ProductPrice * quantity +fee2);
         }else if (distance >= 16 && distance <= 25) {
-            System.out.println("Your total including delivery will be " + fee3 + ProductPrice * quantity);
+            System.out.println("Your total including delivery will be " + ProductPrice * quantity +fee3);
         }else if (distance >= 26 && distance <= 50) {
-            System.out.println("Your total including delivery will be " + fee4 + ProductPrice * quantity);
+            System.out.println("Your total including delivery will be " + ProductPrice * quantity +fee4);
         } else {
-            System.out.println("Your total including delivery will be " + fee5 + ProductPrice * quantity); }
+            System.out.println("Your total including delivery will be " + ProductPrice * quantity +fee5); }
 
 
 
